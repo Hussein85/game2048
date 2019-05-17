@@ -1,0 +1,138 @@
+.tile {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    line-height: 90px;
+    display: inline-block;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 7px;
+    color: #fff;
+    position: absolute;
+    font-weight: bold;
+}
+
+.tile-color-2 {
+    background: #66c9ff;
+    border-color: #FAF8EF;
+}
+
+.tile-color-4 {
+    background: #f56a81;
+    border-color: #EAE0C8;
+}
+
+.tile-color-8 {
+    background: #490A3D;
+    border-color: #F59563;
+}
+
+.tile-color-16 {
+    background: #355C7D;
+    border-color: #3399ff;
+}
+
+.tile-color-32 {
+    background: #0CA5B0;
+    border-color: #ffa333;
+}
+
+.tile-color-64 {
+    background: #00C176;
+    border-color: #cef030;
+}
+
+.tile-color-128 {
+    background: #E21B5A;
+    border-color: #E8D8CE;
+}
+
+.tile-color-256 {
+    background: #109B81;
+    border-color: #990303;
+}
+
+.tile-color-512 {
+    background: #E21B5A;
+    border-color: #6BA5DE;
+}
+
+.tile-color-1024 {
+    background: #E21B5A;
+    border-color: #DCAD60;
+}
+
+.tile-color-2048 {
+    background: #E21B5A;
+    border-color: #B60022;
+}
+
+.tile-merged {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-name: tileMerged;
+    animation-name: tileMerged;
+}
+
+@-webkit-keyframes tileMerged {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+@keyframes tileMerged {
+    from {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.tile-new {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-name: tileNew;
+    animation-name: tileNew;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes tileNew {
+    from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes tileNew {
+    from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+

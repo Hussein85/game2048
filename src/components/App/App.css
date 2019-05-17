@@ -1,0 +1,45 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+body {
+  background: #faf8ef;
+  color: #776E65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  margin: 80px 0;
+}
+
+.newGame-button {
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  color: #f9f6f2;
+  height: 40px;
+  font-size : 20px
+}
+
+.board-container {
+  margin-top: 30px;
+  width: 440px;
+  height: 440px;
+  padding: 5px;
+  background-color: #cce4db;
+  border-radius: 7px;
+  position: relative;
+}
+
+.game-over {
+  margin-left: 30px;
+  color: red;
+  font-size : 20px;
+  font-weight: bold;
+}
+
+.game-won {
+  margin-left: 30px;
+  color: green;
+  font-size : 20px;
+  font-weight: bold;
+}
